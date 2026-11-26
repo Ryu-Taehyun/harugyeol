@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="계획하고, 실행하고, 돌아보는 개인 다이어리 하루결">
+  <title>하루결 · Plan–Do–See 다이어리</title>
+  <link rel="stylesheet" href="./web/style.css">
+  <style>
+    .pages-inner h2 { margin-top: 0; }
+    .pages-inner .overline { color: #6e487f; margin-bottom: .65rem; }
+    .launch { margin: 1.35rem 0; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: .8rem; background: var(--paper); }
+    .launch h3 { font-size: 1rem; margin-bottom: .35rem; }
+    .launch ol { margin: 0; padding-left: 1.35rem; }
+    .launch li + li { margin-top: .35rem; }
+    .launch code { color: var(--plum); overflow-wrap: anywhere; }
+    .launch a { text-decoration: underline; text-underline-offset: .16em; }
+    .pages-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+    .pages-actions a { display: inline-block; }
+  </style>
+</head>
+<body class="entry">
+  <main class="login-layout">
+    <section class="cover" aria-labelledby="home-title">
+      <a class="brand cover-brand" href="./"><span class="brand-mark" aria-hidden="true">◒</span> 하루결</a>
+      <div class="cover-copy">
+        <p class="overline">PLAN · DO · SEE</p>
+        <h1 id="home-title">나의 하루에<br>결을 더하다.</h1>
+        <p>하루의 계획과 실행, 그리고 회고를 한 곳에.</p>
+      </div>
+      <div class="cover-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="folio folio-back"></div><div class="folio folio-front"><span></span><i></i><i></i><i></i></div>
+      </div>
+      <p class="cover-footer">나만의 Plan–Do–See 다이어리</p>
+    </section>
+    <section class="entry-side" aria-labelledby="launch-title">
+      <div class="entry-inner pages-inner">
+        <p class="overline">하루결 다이어리</p>
+        <h2 id="launch-title">오늘을 기록해 볼까요?</h2>
+        <p class="muted">회원가입과 기록 저장은 내 컴퓨터에서 하루결 서버를 실행하면 사용할 수 있어요.</p>
+        <div class="launch">
+          <h3>내 컴퓨터에서 시작하기</h3>
+          <ol>
+            <li>소스 ZIP을 내려받아 압축을 풉니다.</li>
+            <li>Node.js 24 이상이 설치된 환경에서 프로젝트 폴더를 열고 <code>node scripts/local.mjs</code>를 실행합니다.</li>
+            <li><a href="http://127.0.0.1:3000/">로컬 로그인 화면</a>을 엽니다.</li>
+          </ol>
+        </div>
+        <div class="pages-actions">
+          <a class="primary" href="https://github.com/Ryu-Taehyun/harugyeol/archive/refs/heads/main.zip">소스 ZIP 받기</a>
+          <a class="ghost" href="https://github.com/Ryu-Taehyun/harugyeol">GitHub 프로젝트</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
